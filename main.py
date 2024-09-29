@@ -36,7 +36,7 @@ def check_internet_speed():
     # Get ping (latency)
     ping = st.results.ping
 
-    return [download_speed, upload_speed, ping]
+    return [round(download_speed, 2), round(upload_speed, 2), round(ping, 2)]
 
 
 @bot.message_handler(commands=['start'])
